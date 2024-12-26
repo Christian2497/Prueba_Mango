@@ -1,0 +1,56 @@
+.container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .track {
+    position: relative;
+    height: 6px;
+    background-color: #ddd;
+    margin: 20px 0;
+    border-radius: 3px;
+  }
+  
+  .range {
+    position: absolute;
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 3px;
+  }
+  
+  .handle {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: grab;
+    transition: transform 0.2s ease;
+  }
+  
+  .handle:active {
+    cursor: grabbing;
+  }
+  
+  .handle:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  
+  .labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .label {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .labelActive {
+    font-weight: bold;
+    color: #000;
+  }
+  

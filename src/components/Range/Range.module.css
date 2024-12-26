@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    width: 60px;
+    text-align: center;
+  }
+  
+  .track {
+    position: relative;
+    height: 6px;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+  }
+  
+  .range {
+    position: absolute;
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 3px;
+  }
+  
+  .handle {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #007bff;
+    border-radius: 50%;
+    transform: translate(-50%, -5px);
+    cursor: grab;
+    transition: transform 0.2s;
+  }
+  
+  .handle:hover {
+    transform: scale(1.5) translate(-50%, -5px);
+    cursor: pointer;
+  }
+  
+  .handle:active {
+    cursor: grabbing;
+  }
+  
